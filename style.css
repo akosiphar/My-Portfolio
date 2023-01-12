@@ -1,0 +1,296 @@
+:root {
+    --blue: #222C3C;
+    --blue_75: rgba(34, 44, 60, .75);
+    --blue_50: rgba(34, 44, 60, .5);
+    --blue_25: rgba(34, 44, 60, .25);
+    --yellow: rgba(216, 178, 110, 1);
+    --yellow_75: rgba(216, 178, 110, .75);
+    --yellow_50: rgba(216, 178, 110, .5);
+    --yellow_25: rgba(216, 178, 110, .25);
+    --gray: rgba(153, 158, 167, 1);
+    --gray_75: rgba(153, 158, 167, .75);
+    --gray_50: rgba(153, 158, 167, .5);
+    --gray_25: rgba(153, 158, 167, .25);
+    --brown: rgba(182, 155, 125, 1);
+    --brown_75: rgba(182, 155, 125, .75);
+    --brown_50: rgba(182, 155, 125, .5);
+    --brown_25: rgba(182, 155, 125, .25);
+    --cream: rgba(226, 224, 213, 1);
+    --cream_75: rgba(226, 224, 213, .75);
+    --cream_50: rgba(226, 224, 213, .5);
+    --cream_25: rgba(226, 224, 213, .25);
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--yellow_50); 
+    border-radius: 10px;
+    transition: background-color 1s;
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--yellow); 
+}
+
+/* global values */
+* {
+    font-family: 'Montaga', serif;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+nav {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: var(--blue_50);
+}
+
+.nav-link:hover {
+    color: var(--yellow);
+}
+
+.highlight{
+    color: navy;
+}
+
+a:hover {
+    color: var(--yellow);
+}
+
+/* bg classes */
+.bg-blue {
+    background-color: var(--blue);    
+}
+
+.bg-cream {
+    background-color: var(--cream);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-yellow-75 {
+    background-color: var(--yellow_75);
+}
+.bg-yellow-50 {
+    background-color: var(--yellow_50);
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 107px;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+}
+
+.montaga {
+    font-family: 'Montaga', serif;
+}
+
+.hero {
+    height: 100vh;
+    background-color: var(--blue);
+}
+
+.left-side {
+    color: white;
+}
+
+.flexgap {
+    gap: 0rem 8rem;
+}
+
+.st-1 {
+    font-size: 50px;
+}
+
+.ct-1 {
+    font-size: 42px;
+}
+
+.pg-1 {
+    font-size: 16px;
+}
+
+.bgsection {
+    height: 5rem;
+    background-color: var(--cream);
+    color: var(--blue);
+    font-size: 50px;
+}
+
+.vh-100 {
+    height: 100vh;
+}
+
+/* paddings */
+.xl-y-padding {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.xl-top-padding {
+    padding-top: 20rem;
+}
+
+
+.l-y-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.l-x-padding {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.l-bot-padding {
+    padding-bottom: 5rem;
+}
+
+/* margins */
+.xl-margin {
+
+}
+
+
+.typewriter2 {
+    display: inline-block;
+    border-right: .05em solid orange;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(60, end), blink .5s step-end infinite alternate;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+  /* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* form effect */
+.input-effect {
+    position: relative;
+}
+
+input {
+    width: 100%;
+    border: solid 1.5px var(--brown);
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: black;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 1rem;
+}
+
+label {
+    position: absolute;
+    left: 16px;
+    color: black;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input:focus {
+    outline: none;
+    border: 1.5px solid #1a73e8;
+}
+
+input:focus ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: #020e26;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: .5rem .6rem;
+    color: white;
+}
+
+
+.bh-effect {
+    background-color: var(--blue);
+    color: white;
+    transition: background-color .3s;
+}
+
+.bh-effect:hover {
+    background-color: var(--yellow);
+    color: var(--blue);
+}
+
+.card > .overflow-hidden > img {
+    transition: transform .2s;
+}
+.card:hover > .overflow-hidden > img:hover {
+    transform: scale(1.1);
+}
+
+
+
+@media only screen and (max-width: 601px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .hero {
+        height: 100%;
+        margin: 5rem 0rem;
+    }
+
+    .xl-y-padding{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+
+    .sticky-top {
+        position: relative;
+    }
+
+    .typewriter2 {
+        display: inline-block;
+        animation: none;
+        border: none;
+    }
+
+
+}
+
+@media only screen and (max-width: 991px) {
+    .typewriter2 {
+        display: inline-block;
+        white-space: normal;
+        animation: none;
+        border: none;
+    }
+}
