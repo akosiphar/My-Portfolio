@@ -168,11 +168,6 @@ h1 {
     padding-bottom: 5rem;
 }
 
-/* margins */
-.xl-margin {
-
-}
-
 
 .typewriter2 {
     display: inline-block;
@@ -271,6 +266,12 @@ input:focus ~ label {
         padding-top: 0;
         padding-bottom: 0;
     }
+
+    .xl-y-sm-padding {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+    
 
 
     .sticky-top {
