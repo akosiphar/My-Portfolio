@@ -222,14 +222,15 @@ input:focus {
     border: 1.5px solid #1a73e8;
 }
 
-input:focus ~ label {
+input:focus + label, input:not(:placeholder-shown) + label {
     transform: translateY(-50%) scale(0.8);
     background-color: #020e26;
     border-radius: 10px;
     font-size: 1rem;
-    padding: .5rem .6rem;
+    padding: .2rem .6rem;
     color: white;
 }
+
 
 
 .bh-effect {
@@ -283,7 +284,6 @@ input:focus ~ label {
         animation: none;
         border: none;
     }
-
 
 }
 
