@@ -15,59 +15,90 @@
         <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">&lt;RG&gt;</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
                 </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto d-flex align-items-center">
-                <a class="nav-link" href="index.html">Home</a>
-                <a class="nav-link" href="tools.html">Tools</a>
-                <a class="nav-link highlight" aria-current="page" href="Projects.html">Projects</a>
-                <a class="nav-link" href="Contact.html">
-                    <button class="px-3 py-2 border rounded-2 bh-effect fw-semibold">Hire Me</button>
-                </a>
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="tools.html">Tools</a>
+                    <a class="nav-link highlight" aria-current="page" href="Projects.html">Projects</a>
+                    <a class="nav-link">
+                        <button class="px-3 py-2 border rounded-2 bh-effect fw-semibold" data-bs-toggle="modal" data-bs-target="#exampleModal">Hire Me</button>
+                    </a>
+                    
+                </div>
             </div>
         </div>
     </nav>
 
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Thank you for reaching out</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            You can message me through
+            <a href="https://www.linkedin.com/in/raphgalag/">LinkedIn</a>
+            <hr>
+            Here is my 
+            <a href="./Raphaelo Galag.pdf">CV</a>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Done</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
     <!-- hero section -->
     <head class="position-relative">
         <div class="xl-y-padding xl-y-sm-padding d-flex flex-lg-column flex-column justify-content-center align-items-center flexgap">
-            <h1 class="mb-5">PROJECTS</h1>
+            <h1 class="mb-3">PROJECTS</h1>
+            <h2 class="text-light mb-4">(Using Webflow)</h2>
             <div class="row justify-content-evenly gap-3 m-auto">
                 <div class="card col-12 col-lg-4">
                     <div class="overflow-hidden">
-                        <img src="./images/s09.png" class="img-fluid" alt="...">
+                        <img src="./images/intalio estates.JPG" class="img-fluid" alt="Intalio Estates">
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Session - 09</h5>
-                        <p class="card-text">This is where Bootstrap was introduced</p>
+                        <a href="https://www.intalioestates.ph/">
+                        <h5 class="card-title">Intalio Estates</h5>
+                        </a>
+
                     </div>
                 </div>
                 <div class="card col-12 col-lg-4 overflow-hidden">
                     <div class="overflow-hidden">
-                        <img src="./images/s10.JPG" class="img-fluid" alt="...">
+                        <img src="./images/jacinta enclaves.JPG" class="img-fluid" alt="Jacinta Enclaves">
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Session - 10</h5>
-                        <p class="card-text">Learned how to use flexbox</p>
+                        <a href="https://www.jacintaenclaves.com/">
+                        <h5 class="card-title">Jacinta Enclaves</h5>
+                        </a>
                     </div>
                 </div>
                 <div class="card col-12 col-lg-4 overflow-hidden">
                     <div class="overflow-hidden">
-                        <img src="./images/s11.JPG" class="img-fluid" alt="...">
+                        <img src="./images/weecommcentre.JPG" class="img-fluid" alt="Weecomm Center">
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Session - 11</h5>
-                        <p class="card-text">Learned to make it responsive</p>
+                        <a href="https://www.weecommcentre.ph/">
+                        <h5 class="card-title">Weecomm Centre</h5>
+                        </a>
                     </div>
                 </div>
                 <div class="card col-12 col-lg-4 ">
                     <div class="overflow-hidden">
-                        <img src="./images/s12.JPG" class="img-fluid" alt="...">
+                        <img src="./images/jrcc.png" class="img-fluid" alt="Jesus Reigns Christian College">
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Session - 12</h5>
-                        <p class="card-text">Combining all components</p>
+                        <a href="https://www.jrccmanila.edu.ph/">
+                        <h5 class="card-title">Jesus Reigns Christian College</h5>
+                        </a>
                     </div>
                 </div>
             </div>
